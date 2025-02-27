@@ -1,0 +1,120 @@
+@import "./base.css";
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+*,
+*::before,
+*::after {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 45%;
+  /* sm */
+  @media (min-width: 640px) {
+    font-size: 50%;
+  }
+  /* md */
+  @media (min-width: 768px) {
+    font-size: 56%;
+  }
+  /* lg  */
+  @media (min-width: 1024px) {
+    font-size: 62.5%;
+  }
+  /* xl */
+  @media (min-width: 1280px) {
+    font-size: 70%;
+  }
+  /* 2xl */
+  @media (min-width: 1536px) {
+    font-size: 75%;
+  }
+  /* 
+  Why 62.5%?
+  - Browser root font size 16 pixel. Now we will set font-size: 10px; for easy calculation.
+  - We set it as a % value, because then it will take it's parent font size as the reference, which is browser's default 16px.
+  - if we set font-size: 10px then browser's 16px will be replaced by 10. So user lost the flexibility of changing it. Like zoom in and out of the browser will have no effect.
+  */
+}
+body {
+  padding: 2.6rem;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  box-sizing: border-box;
+}
+
+.paragraph {
+  font-size: var(--font-size-base);
+  &:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
+}
+
+.heading-primary {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 4.2rem;
+
+  @media (min-width: 640px) {
+    font-size: 5rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 5.6rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 6rem;
+  }
+}
+.heading-primary--meta {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  display: inline-block;
+}
+.heading-meta {
+  font-size: 2.6rem;
+}
+.heading-secondary {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
