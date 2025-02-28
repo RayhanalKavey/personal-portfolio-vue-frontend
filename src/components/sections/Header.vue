@@ -23,7 +23,7 @@ const toggleMenu = () => {
 <template>
   <header
     class="bg-[var(--primary-v2)] dark:bg-[var(--secondary-v2)] px-8 py-10 rounded-[var(--border-radius-base)]">
-    <div class="container mx-auto flex items-center justify-between">
+    <div class="mx-auto flex items-center justify-between">
       <!-- === Logo === -->
       <RouterLink
         to="/"
@@ -43,6 +43,16 @@ const toggleMenu = () => {
           to="/about"
           class="hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] hover:transition hover:duration-300">
           About
+        </RouterLink>
+        <RouterLink
+          to="/projects"
+          class="hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] hover:transition hover:duration-300">
+          Projects
+        </RouterLink>
+        <RouterLink
+          to="/contact"
+          class="hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] hover:transition hover:duration-300">
+          Get in Touch
         </RouterLink>
       </nav>
 
@@ -68,14 +78,24 @@ const toggleMenu = () => {
       class="font-semibold text-center hidden md:hidden mt-10 mx-4 space-y-2 text-[var(--text-light)] dark:text-[var(--text-dark)] bg-[var(--secondary)] rounded-[var(--border-radius-base)] px-10 pt-6 pb-8">
       <div class="flex flex-col justify-center gap-4">
         <RouterLink
-          href="/"
+          to="/"
           class="inline-block hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] border-b-[.05rem] hover:transition hover:duration-300">
           Home
         </RouterLink>
         <RouterLink
-          href="/about"
+          to="/about"
           class="inline-block hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] border-b-[.05rem] hover:transition hover:duration-300">
           About
+        </RouterLink>
+        <RouterLink
+          to="/projects"
+          class="inline-block hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] border-b-[.05rem] hover:transition hover:duration-300">
+          Projects
+        </RouterLink>
+        <RouterLink
+          to="/contact"
+          class="inline-block hover:text-[var(--text-light-v2)] dark:hover:text-[var(--text-dark-v2)] border-b-[.05rem] hover:transition hover:duration-300">
+          Get in Touch
         </RouterLink>
       </div>
     </div>
