@@ -6,7 +6,7 @@
 
   <component
     :is="href ? 'a' : 'button'"
-    :href="href"
+    :to="href"
     :class="computedClass"
     v-bind="$attrs">
     {{ label }}

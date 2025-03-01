@@ -21,7 +21,7 @@ const heroBg = "../../../public/images/hero-bg.jpg";
       >
     </h1>
     <div class="flex space-x-4 mt-[4rem] md:mt-[6rem] justify-center">
-      <Button type="primary" label="Get in Touch" href="/admin" />
+      <Button type="primary" label="Get in Touch" href="/contact" />
     </div>
   </section>
 </template>
