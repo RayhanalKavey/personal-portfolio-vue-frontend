@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+import WorkingSection from "@/components/sections/WorkingSection.vue";
+import ContactSection from "@/components/sections/ContactSection.vue";
+import FaqSection from "@/components/sections/FaqSection.vue";
+</script>
 
 <template>
-  <h1>This is contact view</h1>
+  <ContactSection />
+  <WorkingSection />
+  <FaqSection />
 </template>
 
 <style scoped></style>

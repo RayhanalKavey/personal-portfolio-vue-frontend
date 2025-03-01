@@ -1,8 +1,12 @@
-<script setup></script>
+<script setup>
+import AboutSection from "@/components/sections/AboutSection.vue";
+import FaqSection from "@/components/sections/FaqSection.vue";
+import ContactSection from "@/components/sections/ContactSection.vue";
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AboutSection />
+  <FaqSection />
+  <ContactSection />
 </template>
 
 <style scoped>
