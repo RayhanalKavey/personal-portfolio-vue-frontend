@@ -6,7 +6,7 @@
 
   <component
     :is="href ? 'a' : 'button'"
-    :to="href"
+    :href="href"
     :class="computedClass"
     v-bind="$attrs">
     {{ label }}
@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
 import { computed } from "vue";
 
 const props = defineProps({
